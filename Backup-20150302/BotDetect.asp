@@ -1,0 +1,1 @@
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%><link type="text/css" rel="Stylesheet" href="BotDetect/Layout.css" /> <!-- #include file ="BotDetect\CaptchaClass.asp" -->

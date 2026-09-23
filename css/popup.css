@@ -1,0 +1,49 @@
+.popup{
+	  background-color: #FFFFFF; 
+      height: 370px; width: 580px; 
+      border: 5px solid #990000; 
+      position: absolute; visibility: hidden; 
+      font-family: Verdana, Geneva, sans-serif; 
+      font-size: small; text-align: justify; 
+      padding: 5px; overflow: hidden; 
+      z-index: 2;
+	  text-align:center;
+}
+
+.popup_bg {
+      position: absolute; 
+      visibility: hidden; 
+      height: 100%; width: 100%; 
+      left: 0px; top: 0px; 
+      filter: alpha(opacity=70); /* for IE */ 
+      opacity: 0.7; /* CSS3 standard */ 
+      background-color: #999; 
+      z-index: 1; 
+}
+.close_button {
+      font-family: Verdana, Geneva, sans-serif; 
+      font-size: small; font-weight: bold; 
+      float: right; color: #666; 
+      display: block; text-decoration: none; 
+      border: 2px solid #666; 
+      padding: 0px 3px 0px 3px; 
+}
+.popuptext_01
+{
+	font-family: "Comic Sans MS";
+	font-size: 24px;
+	color: #FFFFFF;
+}
+.popuptext_02
+{
+	font-family: "Comic Sans MS";
+	font-size: 24px;
+	color: #FFFF00;
+}
+
+.popupclose
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFFF00;
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Anuvikaz</title>
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+<script language="javascript">
+
+function check()
+{
+	var Frm = document.SDForm; 
+	
+	if(Frm.txtFrientName_1.value != "")
+	{
+		if(Frm.txtFrientEmailID_1.value == "")
+		{
+			alert("Enter your Friend e-Mail ID");
+			Frm.txtFrientEmailID_1.focus();
+			return false;
+		}
+	}
+
+	if(Frm.txtFrientName_2.value != "")
+	{
+		if(Frm.txtFrientEmailID_2.value == "")
+		{
+			alert("Enter your Friend e-Mail ID");
+			Frm.txtFrientEmailID_2.focus();
+			return false;
+		}
+	}
+
+	if(Frm.txtFrientName_3.value != "")
+	{
+		if(Frm.txtFrientEmailID_3.value == "")
+		{
+			alert("Enter your Friend e-Mail ID");
+			Frm.txtFrientEmailID_3.focus();
+			return false;
+		}
+	}
+
+	if(Frm.txtFrientName_4.value != "")
+	{
+		if(Frm.txtFrientEmailID_4.value == "")
+		{
+			alert("Enter your Friend e-Mail ID");
+			Frm.txtFrientEmailID_4.focus();
+			return false;
+		}
+	}
+
+	if(Frm.txtFrientName_5.value != "")
+	{
+		if(Frm.txtFrientEmailID_5.value == "")
+		{
+			alert("Enter your Friend e-Mail ID");
+			Frm.txtFrientEmailID_5.focus();
+			return false;
+		}
+	}
+
+	if(Frm.txtFrientEmailID_1.value != "")
+	{
+		if(Frm.txtFrientName_1.value == "")
+		{
+			alert("Please Enter your Friend Name")
+			Frm.txtFrientName_1.focus()
+			return false;
+		}
+
+	   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+	   if(emailPattern.test(Frm.txtFrientEmailID_1.value) == false)
+	   {
+			Frm.txtFrientEmailID_1.focus(); 
+			alert("Email ID is not valid")
+			return false;
+	   }
+	}
+
+	if(Frm.txtFrientEmailID_2.value != "")
+	{
+		if(Frm.txtFrientName_2.value == "")
+		{
+			alert("Please Enter your Friend Name")
+			Frm.txtFrientName_2.focus()
+			return false;
+		}
+
+	   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+	   if(emailPattern.test(Frm.txtFrientEmailID_2.value) == false)
+	   {
+			Frm.txtFrientEmailID_2.focus(); 
+			alert("Email ID is not valid")
+			return false;
+	   }
+	}
+
+	if(Frm.txtFrientEmailID_3.value != "")
+	{
+		if(Frm.txtFrientName_3.value == "")
+		{
+			alert("Please Enter your Friend Name")
+			Frm.txtFrientName_3.focus()
+			return false;
+		}
+
+	   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+	   if(emailPattern.test(Frm.txtFrientEmailID_3.value) == false)
+	   {
+			Frm.txtFrientEmailID_3.focus(); 
+			alert("Email ID is not valid")
+			return false;
+	   }
+	}
+
+	if(Frm.txtFrientEmailID_4.value != "")
+	{
+		if(Frm.txtFrientName_4.value == "")
+		{
+			alert("Please Enter your Friend Name")
+			Frm.txtFrientName_4.focus()
+			return false;
+		}
+
+	   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+	   if(emailPattern.test(Frm.txtFrientEmailID_4.value) == false)
+	   {
+			Frm.txtFrientEmailID_4.focus(); 
+			alert("Email ID is not valid")
+			return false;
+	   }
+	}
+
+	if(Frm.txtFrientEmailID_5.value != "")
+	{
+		if(Frm.txtFrientName_5.value == "")
+		{
+			alert("Please Enter your Friend Name")
+			Frm.txtFrientName_5.focus()
+			return false;
+		}
+
+	   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+	   if(emailPattern.test(Frm.txtFrientEmailID_5.value) == false)
+	   {
+			Frm.txtFrientEmailID_5.focus(); 
+			alert("Email ID is not valid")
+			return false;
+	   }
+	}
+
+	if(Frm.txtFrientEmailID_1.value == "" && Frm.txtFrientEmailID_2.value == "" && Frm.txtFrientEmailID_3.value == "" && Frm.txtFrientEmailID_4.value == "" && Frm.txtFrientEmailID_5.value == "")
+	{
+		alert("Please enter the Email IDs")
+		Frm.txtFrientEmailID_1.focus(); 
+		return false;
+	}
+
+	if(Frm.txtFullName.value == "")
+	{
+		alert("Please enter Your Name")
+		Frm.txtFullName.focus(); 
+		return false;
+	}
+
+	if(Frm.txtEmailSubject.value == "")
+	{
+		alert("Please enter Email Subject")
+		Frm.txtEmailSubject.focus(); 
+		return false;
+	}
+
+	if(Frm.txtEmailContent.value == "")
+	{
+		alert("Please enter Email Content")
+		Frm.txtEmailContent.focus(); 
+		return false;
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="header">
+    	<h1><a href="index.html"><img src="images/logo.jpg" alt="Anuvikaz" title="Anuvikaz" /></a></h1>
+        <p>
+        	<span>
+            	<a href="https://www.facebook.com/Anuvikaz" target="_blank"><img src="images/facebook.png" alt="" border="0" /></a>
+                <a href="#"><img src="images/twitter.png" alt="" /></a>            </span>        </p>
+		<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="#">Projects</a>
+            	<ul>
+                    <li><a href="health-care.html">Health Care</a></li>
+                    <li><a href="scholarship-education.html">Scholarship &amp; Education</a></li>
+                    <li><a href="employability-programmes.html">Employability Programmes</a></li>
+                    <li><a href="vocational-guidance-programmes.html">Vocational Guidance</a></li>
+                    <li><a href="mother-earth-programmes.html">Mother Earth Programmes</a></li>
+				</ul>
+            </li>
+            <li><a href="csr.html">CSR</a></li>
+            <li><a href="#">Gallery</a>
+            	<ul>
+                	<li><a href="photo-gallery.html">Photo Gallery</a></li>
+                    <li><a href="video-gallery.html">Video Gallery</a></li>
+                </ul>
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+    
+    <div class="inner-banner">
+    	<div class="don fl">
+            <h3>Bring Smiles</h3>
+            <ul>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="Spread-the-Word.html">Spread the Word</a></li>
+        	</ul>
+        </div>
+        <div class="add fr">
+        	<img src="images/add-banner.gif" alt=""  height="98" />
+        </div>
+        <div class="clr"></div>
+        <div class="contantArea">
+		<form name="SDForm" action="Action-Spread-the-Word.asp" method="post" onSubmit="return check()">
+        	<h2>Spread the Good Work</strong></h2>
+            <p><strong></p>
+            <p>If you like the work we do, please do recommend us to your friends.<br /><br />
+            </p>
+            <table width="60%" border="1" align="center" cellpadding="1" cellspacing="1" bordercolor="#CCCCCC">
+              <tr>
+                <td width="10%" height="25"><div align="center"><strong>SlNo</strong></div></td>
+                <td width="45%"><div align="center"><strong>Name of Your Friend </strong></div></td>
+                <td width="45%"><div align="center"><strong>Email ID </strong></div></td>
+              </tr>
+              <tr>
+                <td height="25"><div align="center">1</div></td>
+                <td><input name="txtFrientName_1" type="text" id="txtFrientName_1" size="30" maxlength="50" /></td>
+                <td><input name="txtFrientEmailID_1" type="text" id="txtFrientEmailID_1" size="30" maxlength="50" /></td>
+              </tr>
+              <tr>
+                <td height="25"><div align="center">2</div></td>
+                <td><input name="txtFrientName_2" type="text" id="txtFrientName_2" size="30" maxlength="50" /></td>
+                <td><input name="txtFrientEmailID_2" type="text" id="txtFrientEmailID_2" size="30" maxlength="50" /></td>
+              </tr>
+              <tr>
+                <td height="25"><div align="center">3</div></td>
+                <td><input name="txtFrientName_3" type="text" id="txtFrientName_3" size="30" maxlength="50" /></td>
+                <td><input name="txtFrientEmailID_3" type="text" id="txtFrientEmailID_3" size="30" maxlength="50" /></td>
+              </tr>
+              <tr>
+                <td height="25"><div align="center">4</div></td>
+                <td><input name="txtFrientName_4" type="text" id="txtFrientName_4" size="30" maxlength="50" /></td>
+                <td><input name="txtFrientEmailID_4" type="text" id="txtFrientEmailID_4" size="30" maxlength="50" /></td>
+              </tr>
+              <tr>
+                <td height="25"><div align="center">5</div></td>
+                <td><input name="txtFrientName_5" type="text" id="txtFrientName_5" size="30" maxlength="50" /></td>
+                <td><input name="txtFrientEmailID_5" type="text" id="txtFrientEmailID_5" size="30" maxlength="50" /></td>
+              </tr>
+          </table>
+            <br />
+            <table width="60%" border="1" align="center" cellpadding="1" cellspacing="1" bordercolor="#CCCCCC">
+              <tr>
+                <td width="20%">Your Name</td>
+                <td width="80%"><input name="txtFullName" type="text" id="txtFullName" size="30" maxlength="100" /></td>
+              </tr>
+              <tr>
+                <td width="20%">e-Mail Subject </td>
+                <td width="80%"><input name="txtEmailSubject" type="text" id="txtEmailSubject" size="40" maxlength="200" /></td>
+              </tr>
+              <tr>
+                <td>e-Mail Content </td>
+                <td><textarea name="txtEmailContent" cols="40" rows="5" id="txtEmailContent"></textarea></td>
+              </tr>
+              <tr>
+                <td colspan="2"> <iframe id="myframe" name="myframe" src="ImageVerification.asp" frameborder="0" width="100%" height="210"> </iframe> </td>
+                
+              </tr>
+              
+              
+            </table>
+            <br />
+          <br />
+          <br />
+          </form>
+      </div>
+        <div class="clr"></div>
+    </div>
+    <div class="footer">
+    	<p>Copyright &copy; anuvikaz.org</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Anuvikaz</title>
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="js/sliderman.1.1.1.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+		$(function() {
+			//We initially hide the all dropdown menus
+			$('#dropdown_nav li').find('.sub_nav').hide();
+
+			//When hovering over the main nav link we find the dropdown menu to the corresponding link.
+			$('#dropdown_nav li').hover(function() {
+				//Find a child of 'this' with a class of .sub_nav and make the beauty fadeIn.
+				$(this).find('.sub_nav').fadeIn(100);
+			}, function() {
+				//Do the same again, only fadeOut this time.
+				$(this).find('.sub_nav').fadeOut(50);
+			});
+		});
+	</script>
+</head>
+
+<body>
+<div class="container">
+	<div class="header">
+    	<h1><a href="index.html"><img src="images/logo.jpg" alt="Anuvikaz" title="Anuvikaz" /></a></h1>
+        <h2>
+        	<a href="donate.html">Donate</a>
+            <a href="volunteer.html">Volunteer</a>
+        </h2>
+    </div>
+    <div class="menu">
+    	<span class="leftbracket"><img src="images/menu-leftbracket.png" alt="" /></span>
+        <span class="rightbracket"><img src="images/menu-rightbracket.png" alt="" /></span>
+        <ul id="dropdown_nav">
+        	<li><a href="#">&nbsp;</a></li>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Projects</a>
+            	<ul class="sub_nav">
+                	<li><a href="health-care.html">Health Care</a></li>
+                    <li><a href="scholarship-education.html">Scholarship &amp; Education</a></li>
+                    <li><a href="employability-programmes.html">Employability Programmes</a></li>
+                    <li><a href="vocational-guidance-programmes.html">Vocational Guidance Programmes</a></li>
+                    <li><a href="mother-earth-programmes.html">Mother Earth Programmes</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Gallery</a>
+            	<ul class="sub_nav">
+                	<li><a href="photo-gallery.html">Photo Gallery</a></li>
+                    <li><a href="video-gallery.html">Video Gallery</a></li>
+                </ul>
+            </li>
+            <li><a href="suggestion-box.html">Suggestion Box</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+    <div class="main">
+    	<div class="banner">
+        	<div class="banner-left fl">
+            	<div id="slider_container_1">
+                    <div id="SliderName">
+                        <img src="images/slide02.jpg" alt=""  />
+                        <img src="images/slide01.jpg" alt=""  />
+                        <img src="images/slide03.jpg" alt=""  />
+                        <img src="images/slide04.jpg" alt=""  />
+                        <img src="images/slide05.jpg" alt=""  />
+                    </div>
+				<div class="c"></div>
+				<div id="SliderNameNavigation"></div>
+				<div class="c"></div>
+				<script type="text/javascript">
+                            // we created new effect and called it 'demo01'. We use this name later.
+                            Sliderman.effect({name: 'demo01', cols: 5, rows: 5, delay: 15, fade: true, order: 'straight_stairs'});
+        
+                            var demoSlider = Sliderman.slider({container: 'SliderName', width: 684, height: 315, effects: 'demo01',
+                            display: {
+                                pause: true, // slider pauses on mouseover
+                                autoplay: 3000, // 3 seconds slideshow
+                                always_show_loading: 100, // testing loading mode
+                                description: {background: '#900e4c', width:684, height: 315, position: 'top'}, // image description box settings
+                                //loading: {background: '#000000',  image: 'images/loading.gif'}, // loading box settings
+                                buttons: {opacity: 1, prev: {className: 'SliderNamePrev', label: ''}, next: {className: 'SliderNameNext', label: ''}}, // Next/Prev buttons settings
+                                navigation: {container: 'SliderNameNavigation', label: '&nbsp;'} // navigation (pages) settings
+                            }});
+                        </script>
+				<div class="c"></div>
+			</div>
+            </div>
+            <div class="banner-rgt fr">
+            	<ul>
+                	<li class="color1"><a href="health-care.html">Health Care</a></li>
+                    <li class="color2"><a href="scholarship-education.html">Scholarship &amp; Education</a></li>
+                    <li class="color3"><a href="employability-programmes.html">Employability Programmes</a></li>
+                    <li class="color4"><a href="vocational-guidance-programmes.html">Vocational Guidance</a></li>
+                    <li class="color5"><a href="mother-earth-programmes.html">Mother Earth Programmes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contantArea">
+        	<h2>Scholarship &amp; Education</h2>
+            <p>India is considered the world over as a country with the best standards of education, but sadly 20% of India’s poor have no access to education. 86% have no access to technical and vocational training; 45% drop out before eighth grade.</p>
+            <p>By 2015, 65% of Indian population will be youth. This can be our biggest advantage… if we focus on initiatives to educate and train the youth of tomorrow. At Anuvikaz, we aim to do our bit to bridge the education gap through funding education initiatives and by adding value in creating learning programmes. Currently, we offer scholarships to needy students in school and college and help them with their studies.</p>
+        </div>
+    </div>
+    <div class="footer">
+    	<p>Copyright &copy; anuvikaz.org</p>
+    </div>
+</div>
+</body>
+</html>
